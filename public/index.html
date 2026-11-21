@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SysAdmin Toolkit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>SysAdmin Toolkit</h1>
+      <p>Small tools for system and network administrators</p>
+    </header>
+
+    <main class="grid">
+      <section class="card" id="chmod-card">
+        <h2>chmod Calculator</h2>
+        <p class="hint">Type <code>rwxr-xr-x</code> or <code>755</code></p>
+        <input id="chmod-input" type="text" placeholder="rwxr-xr-x" />
+        <button id="chmod-btn">Convert</button>
+        <p id="chmod-output" class="output"></p>
+      </section>
+
+      <section class="card" id="ip-card">
+        <h2>IP Address Checker</h2>
+        <p class="hint">Checks IPv4 and tells private or public</p>
+        <input id="ip-input" type="text" placeholder="192.168.1.10" />
+        <button id="ip-btn">Check</button>
+        <p id="ip-output" class="output"></p>
+      </section>
+
+      <section class="card soon">
+        <h2>Subnet Calculator</h2>
+        <p class="hint">Coming soon</p>
+      </section>
+
+      <section class="card soon">
+        <h2>Password Checker</h2>
+        <p class="hint">Coming soon</p>
+      </section>
+
+      <section class="card soon">
+        <h2>Cron Helper</h2>
+        <p class="hint">Coming soon</p>
+      </section>
+    </main>
+
+    <footer>Version 1.0</footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
