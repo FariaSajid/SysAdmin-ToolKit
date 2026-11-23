@@ -7,7 +7,7 @@ const chmodBtn = document.getElementById("chmod-btn");
 const chmodOutput = document.getElementById("chmod-output");
 
 chmodBtn.addEventListener("click", () => {
-  const value = chmodInput.value.trim()
+  const value = chmodInput.value.trim();
   const result = /^[0-7]{3}$/.test(value)
     ? octalToSymbolic(value)
     : symbolicToOctal(value);
