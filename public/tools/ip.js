@@ -9,7 +9,7 @@ export function isValidIPv4(ip) {
     if (!/^(0|[1-9]\d{0,2})$/.test(part)) {
       return false;
     }
-    return Number(part) < 255; // replaced <= with <
+    return Number(part) <= 255;
   });
 }
 
