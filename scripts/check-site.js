@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from "node:fs";
 
 const required = [
   "public/index.html",
-  "public/styles.css", // replaced style.css with styles.css
+  "public/style.css",
   "public/app.js",
   "public/tools/chmod.js",
   "public/tools/ip.js",
